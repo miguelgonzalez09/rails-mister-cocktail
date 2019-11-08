@@ -11,4 +11,5 @@
     <li><%= dose.ingredient.name %></li>
     <%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }%>
     <% end %>
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 </div>  
